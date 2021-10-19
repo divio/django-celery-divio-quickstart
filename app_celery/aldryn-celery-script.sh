@@ -4,3 +4,4 @@ if [ $1 = "beat" ] ; then
 else
     celery -A app_celery.celery_app worker -P threads --concurrency=4 --loglevel=INFO --without-gossip --without-mingle --without-heartbeat -Ofair
 fi
+

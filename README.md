@@ -1,14 +1,18 @@
-# Django Divio quickstart
+# Django Celery Divio quickstart
 
 A Dockerised Django project, ready to deploy on Divio or another Docker-based cloud platform, and run
 locally in Docker on your own machine. A Divio account is not required.
 
 This version uses Python 3.8 running and the most up-to-date version of Django 3.1.
 
+This Divio quickstart version has celery support enabled. To get a simpler project, take a look at the plain quickstart project:
+https://github.com/divio/django-divio-quickstart/
+
+
 ## Try it
 
 ```bash
-git clone git@github.com:divio/django-divio-quickstart.git
+git clone git@github.com:divio/django-celery-divio-quickstart.git
 cd django-divio-quickstart
 docker-compose build
 docker-compose run web python manage.py migrate
